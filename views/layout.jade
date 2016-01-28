@@ -4,4 +4,10 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    if logged_out
+      a(href='/auth/linkedin') Login
+    if logged_in
+    if name
+      p #{name}
+      a(href='/auth/logout') Logout
     block content
