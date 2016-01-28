@@ -42,7 +42,7 @@ passport.use(new LinkedInStrategy({
     // and return that user instead (so perform a knex query here later.)
     done(null, profile)
   }
-));
+)); 
 
 passport.serializeUser(function(user, done) {
  // later this will be where you selectively send to the browser an identifier for your user,
